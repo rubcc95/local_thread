@@ -5,14 +5,14 @@ use std::{
 
 pub struct LocalThread<F, T> {
     res: ManuallyDrop<T>,
-    func: F,
+    func: ManuallyDrop<F>,
 }
 
 impl<F, T> LocalThread<F, T> {
     #[inline]
     pub fn new(func: F) -> Self {
         Self {
-            func,
+            func: ManuallyDrop::new(func),
             res: unsafe { MaybeUninit::uninit().assume_init() },
         }
     }
