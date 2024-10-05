@@ -2,6 +2,8 @@ use criterion::{black_box, criterion_group, criterion_main, Criterion};
 use local_thread::LocalThread;
 use std::time::Duration;
 
+
+
 fn criterion_benchmark(c: &mut Criterion) {
     fn thread() -> u64 {
         black_box({
