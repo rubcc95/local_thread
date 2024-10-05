@@ -2,6 +2,8 @@
 name = "local_thread"
 version = "0.1.0"
 edition = "2021"
+description = "A local thread management library for Rust. No more 'static functions in order to start threads!"
+license = "MIT"
 
 [dependencies]
 
