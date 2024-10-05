@@ -1,11 +1,11 @@
 [package]
 name = "local_thread"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A local thread management library for Rust. No more 'static functions in order to start threads!"
 license = "MIT"
-
-[dependencies]
+authors = ["Rubén Cantón <rubcc95@gmail.com>"]
+repository = "https://github.com/rubcc95/local_thread"
 
 [dev-dependencies]
 criterion = "0.5.1"
