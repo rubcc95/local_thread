@@ -1,6 +1,6 @@
 use std::{
     mem::{ManuallyDrop, MaybeUninit},
-    thread::{JoinHandle, Resultcarg},
+    thread::{JoinHandle, Result},
 };
 
 pub struct LocalThread<F, T> {
